@@ -1,0 +1,110 @@
+body {
+    /*Define a imagem de fundo*/
+    background-image: url('img/galaxia.jpg');
+
+    /*Impede que a imagem fique se repetindo*/
+    background-repeat: no-repeat;
+
+    /*Faz a imagem cobrir toda a tela, sem distorcer */
+    background-size: cover;
+
+    /*Centraliza a imagem na tela */
+    background-position: center;
+
+    /*Mantém a imagem fixa ao rolar a página*/
+    background-attachment: fixed;
+
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabeçalho  */
+h1 {
+    color: #00f3ff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff;
+}
+
+h3 {
+    text-align: center;
+    color: #b026ff;
+    text-shadow: 0 0 8px #b026ff;
+}
+
+h2 {
+    color: #00f3ff;
+    margin-top: 40px;
+    border-bottom: 2px solid #b026ff;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Menu Navegação */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #b026ff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #b026ff;
+    color: #fff;
+    box-shadow: 0 0 15px #b026ff;
+}
+
+/* --- ORGANIZAÇÃO DOS LIVROS */
+.livros-container {
+    display: flex;             /* Coloca os itens lado a lado */
+    flex-wrap: wrap;           /* Quebra linha se não couber na tela */
+    justify-content: center;   /* centraliza os cards no meio da tela*/
+    gap: 30px;                 /* Espaçamento entre os livros */
+    margin-top: 20px;
+}
+
+.livro-card {
+    background-color: #030318e1;
+    border: 2px solid #00f3ff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;              /* Largura fixa do card */
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao passar o mouse no livro */
+.livro-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #00f3ff, 0 0 30px #b026ff;
+    border-color: #b026ff;
+}
+
+/* Ajuste e padronização do tamanho das imagens */
+.livro-card img {
+    width: 100%;               /* Preenche a largura do card */
+    height: 280px;             /* Altura padrão para todas as capas */
+    object-fit: cover;         /* Evita distorcer a imagem */
+    border-radius: 5px;
+}
+
+.livro-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
